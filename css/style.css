@@ -23,7 +23,6 @@ body {
 }
 
 section {
-    margin-top: 10px;
     text-align: center;
 }
 
@@ -32,18 +31,6 @@ img {
     height: 220px;
     cursor: pointer;
 }
-
-
-/* input {
-    width: 600px;
-    height: 45px;
-    font-size: 20px;
-    box-shadow: none;
-    padding-left: 60px;
-    margin-bottom: 25px;
-    border-radius: 25px;
-    border: 1px solid rgb(223, 223, 223);
-} */
 
 .has-search .form-control:focus {
     border: 1px solid white;
@@ -58,17 +45,22 @@ img {
 }
 
 .main {
-    width: 55%;
     margin: auto;
 }
 
 .has-search .form-control {
     padding-left: 3rem;
     outline: none;
+    width: 650px;
     height: 45px;
     box-shadow: none;
     border-radius: 25px;
     border: 1px solid rgb(223, 223, 223);
+    overflow: hidden;
+}
+
+.form-group {
+    display: -webkit-inline-box;
 }
 
 .has-search .form-control-feedback {
@@ -99,10 +91,10 @@ img {
     display: inline-block;
 }
 
-button {
+.custom-button {
     margin: 5px;
-    width: 120px;
-    height: 40px;
+    width: 130px;
+    height: 35px;
     border: none;
     font-size: 14px;
     color: #5d5d5d;
@@ -110,7 +102,7 @@ button {
     background-color: #eeeeee;
 }
 
-button:hover {
+.custom-button:hover {
     color: black;
     border: 0.5px solid #bfbfbf;
     box-shadow: 0px 0.5px 2px 1px rgb(223, 223, 223);
@@ -155,6 +147,11 @@ footer>div {
 footer * a {
     margin-left: 25px;
     color: rgba(0, 0, 0, 0.54);
+}
+
+footer * a:hover {
+    text-decoration: underline;
+    color: inherit;
 }
 
 .second {
