@@ -60,7 +60,7 @@ img {
 }
 
 .form-group {
-    display: -webkit-inline-box;
+    display: inline-flex;
 }
 
 .has-search .form-control-feedback {
